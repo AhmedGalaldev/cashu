@@ -9,12 +9,16 @@ class Sales extends Model
 {
     use HasFactory;
 
-    protected $fillable=['payment'];
+    protected $fillable=['payment','user_id'];
     
     public function user()
     {
         return $this->belongsTo(User::class);
     }
 
+    public function config()
+    {
+        return $this->hasOne(Config::class);
+    }
    
 }

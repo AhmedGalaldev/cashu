@@ -17,6 +17,27 @@
                     {{ __('You are logged in!') }}
                 </div>
             </div>
+          <div class="mt-3">
+                @if (Auth::user()->hasRole('Admin'))
+                    <a href="{{route('adminsales.index')}}" class="btn btn-primary">Sales</a>
+                    <a href="{{route('adminconfigs.index')}}" class="btn btn-primary">Configs</a>
+                @elseif(Auth::user()->hasRole('Sales'))
+                    <a href="{{route('sales.index')}}" class="btn btn-primary">Sales</a>
+                @elseif(Auth::user()->hasRole('Back Office'))   
+                    <a href="{{route('configs.index')}}" class="btn btn-primary">Configs</a>
+                @else
+                <form action="{{route('assignRole')}}" method="POST">
+                    @csrf
+                    <select class="form-control" name="name">
+                        <option>Select Role</option>
+                        @foreach ($roles as $role)
+                            <option value="{{$role->name}}">{{$role->name}}</option>
+                        @endforeach
+                    </select>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>       
+                </form>
+                @endif
+          </div>
         </div>
     </div>
 </div>
