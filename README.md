@@ -46,3 +46,13 @@ after that you can register and login and verify email using mailtrap
 if you select admin role you can go to sales and configs buttons 
 if you sales you can select sales
 if you back office you can select configs.
+
+# Note
+## Admin
+you can login as admin by (email:admin@gmail.com - password: password) from seeder.
+
+## Sales
+you can login as sales by (email:sales@gmail.com - password: password) from seeder.
+
+## Back office
+you can login as back office by (email:backoffice@gmail.com - password: password) from seeder.
