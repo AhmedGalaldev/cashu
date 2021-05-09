@@ -39,7 +39,8 @@ MAIL_FROM_ADDRESS=
 ```
 
 ```bash
-php artisan migrate --seed
+php artisan migrate:fresh --seed
+
 ```
 after that you can register and login and verify email using mailtrap
 if you select admin role you can go to sales and configs buttons 
