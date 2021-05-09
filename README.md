@@ -15,7 +15,7 @@ edit database credentials in .env file
 DB_DATABASE= database name
 DB_USERNAME=database username
 DB_PASSWORD=password
-
+```
 ```bash
 php artisan key:generate
 ```
