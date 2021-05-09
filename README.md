@@ -49,10 +49,10 @@ if you back office you can select configs.
 
 # Note
 ## Admin
-you can login as admin by (email:admin@gmail.com - password: password) from seeder.
+you can login as admin by (email:admin@gmail.com - password: password) 
 
 ## Sales
-you can login as sales by (email:sales@gmail.com - password: password) from seeder.
+you can login as sales by (email:sales@gmail.com - password: password) 
 
 ## Back office
-you can login as back office by (email:backoffice@gmail.com - password: password) from seeder.
+you can login as back office by (email:backoffice@gmail.com - password: password) 
